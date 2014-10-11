@@ -1,0 +1,21 @@
+{
+	"name": "zebba/utility",
+	"type": "component",
+	"description": "Zebba Utility Component",
+	"homepage": "https://github.com/zebba/Utility",
+	"license": "MIT",
+	"authors": [{
+			"name": "Sebastian Kuhlmann",
+			"email": "zebba@hotmail.de"
+		}
+	],
+	"require": {
+		"php": ">=5.3.1"
+	},
+	"autoload": {
+		"psr-0": {
+			"Zebba\\Component\\Utility\\": ""
+		}
+	},
+	"target-dir": "Zebba/Component/Utility"
+}
