@@ -8,12 +8,12 @@ class ParameterConverter
     {
         if (is_array($args)) {
             $failed = array_filter($args, function ($e) use ($type_of) {
-                return $e instanceof $type_of;
+                return ($type_of !== get_class($e));
             });
 
             if (0 < count($failed)) { return \DomainException(sprintf('You must provide only objects of class %s.'), $type_of); }
         } else {
-            if (! $args instanceof $type_of) { return \DomainException(sprintf('You must provide only objects of class %s.', $type_of)); }
+            if ($type_of !== get_class($args)) { return \DomainException(sprintf('You must provide only objects of class %s.', $type_of)); }
 
             $args = array($args);
         }
