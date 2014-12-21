@@ -11,7 +11,7 @@ class ParameterConverter
                 return ($type_of !== get_class($e));
             });
 
-            if (0 < count($failed)) { return new \DomainException(sprintf('You must provide only objects of class %s.'), $type_of); }
+            if (0 < count($failed)) { return new \DomainException(sprintf('You must provide only objects of class %s.', $type_of)); }
         } else {
             if ($type_of !== get_class($args)) { return new \DomainException(sprintf('You must provide only objects of class %s.', $type_of)); }
 
