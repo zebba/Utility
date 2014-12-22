@@ -9,7 +9,7 @@ Modify your composer.json to add the ZebbaFilterBundle:
 ```json
 {
     "require" : {
-        "zebba/Utilit<" : "1.*"
+        "zebba/utility" : "1.*"
     }
 }    
 ```
