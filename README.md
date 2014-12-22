@@ -4,7 +4,7 @@ Utility
 Installation
 ------------
    
-Modify your composer.json to add the ZebbaFilterBundle:
+Modify your composer.json:
 
 ```json
 {
